@@ -20,4 +20,4 @@ python pdfcombiner.py
 
 # 注意
 
-- LuaLaTeXでビルドすることを想定しています (LaTeX Workshopの設定を.vscode/settings.jsonに置いときます．) ．
+- LuaLaTeXでビルドすることを想定しています (LaTeX Workshopの設定を.vscode/settings.jsonに置いときます．) ．私は[このサイト](https://qiita.com/passive-radio/items/623c9a35e86b6666b89e)を見て環境構築しましたが，settings.jsonの部分が微妙にうまくいかないので，そこだけ注意すれば簡単に一から環境構築できると思います．
