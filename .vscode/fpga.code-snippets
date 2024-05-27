@@ -1,0 +1,17 @@
+{
+	"fpga":{
+		"prefix":"fpga",
+		"body":[
+			"\\documentclass[a4paper, 11pt]{ltjsarticle}",
+			"",
+			"\\usepackage{../fpga}",
+			"",
+			"\\begin{document}",
+			"",
+			"$0",
+			"",
+			"\\end{document}",
+			""
+		]
+	},
+}

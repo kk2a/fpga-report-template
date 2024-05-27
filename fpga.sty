@@ -1,0 +1,139 @@
+\usepackage{amsmath,amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{nccmath}
+\usepackage{bm}
+\usepackage{mathrsfs}
+\usepackage{colortbl}
+\usepackage{graphics}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage{bookmark}
+\usepackage[bottom]{footmisc}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage[toc,title,page]{appendix}
+\usepackage{listings,jvlisting}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{refcount}
+
+\renewcommand{\appendixname}{\textbf{Appendix} }
+
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  lineskip=-0.5ex
+}
+
+\theoremstyle{definition}
+\newtheorem{thm}{定理}[section]
+\newtheorem{lem}[thm]{補題}
+\newtheorem{cor}[thm]{系}
+\newtheorem{prop}[thm]{命題}
+\newtheorem{dfn}[thm]{定義}
+\newtheorem{pro}{問題}
+\newtheorem{conj}{予想}[section]
+\newtheorem*{sol}{解答}
+\newtheorem*{com}{コメント}
+\newtheorem*{clm}{Claim}
+\newtheorem{prt}{Part}
+
+\hypersetup{
+  hidelinks,
+}
+
+\def\zz{\mathbf{Z}}
+\def\qq{\mathbf{Q}}
+\def\rr{\mathbf{R}}
+\def\cc{\mathbf{C}}
+
+\newcommand{\mbf}[1]{\mathbf{#1}}
+\newcommand{\mrm}[1]{\mathrm{#1}}
+\newcommand{\mcal}[1]{\mathcal{#1}}
+\newcommand{\mscr}[1]{\mathscr{#1}}
+\newcommand{\mfk}[1]{\mathfrak{#1}}
+\newcommand{\tit}[1]{\textit{#1}}
+\newcommand{\tbf}[1]{\textbf{#1}}
+
+\newcommand{\flr}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\paren}[1]{\left( #1 \right)}
+\newcommand{\brac}[1]{\left[ #1 \right]}
+\newcommand{\set}[1]{\left\{ #1 \right\}}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\inner}[1]{\left\langle #1 \right\rangle}
+
+\newcommand{\rmone}{I}
+\newcommand{\rmtwo}{I\hspace{-1.2pt}I}
+\newcommand{\rmthree}{I\hspace{-1.2pt}I\hspace{-1.2pt}I}
+\newcommand{\rmfour}{I\hspace{-1.2pt}V}
+\newcommand{\rmfive}{V}
+\newcommand{\rmsix}{V\hspace{-1.2pt}I}
+\newcommand{\rmseven}{V\hspace{-1.2pt}I\hspace{-1.2pt}I}
+\newcommand{\rmeight}{V\hspace{-1.2pt}I\hspace{-1.2pt}I\hspace{-1.2pt}I}
+\newcommand{\rmnine}{I\hspace{-1.2pt}X}
+\newcommand{\rmten}{X}
+\newcommand{\niton}{\not \hspace{0.5 pt} \ni}
+% _my_style.sty
+
+
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage[
+  top=25truemm,
+  bottom=25truemm,
+  left=25truemm,
+  right=25truemm
+]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\newcommand{\reiwayear}{%
+  \number\numexpr\the\year-2018\relax
+}
+\fancyhead[R]{令和\reiwayear 年\the\month 月\the\day 日 \ Iコース00番 \ 名前名前}
+\fancyfoot[R]{\thepage}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\arabic{section}-\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{section}-\arabic{subsection}-\arabic{subsubsection}}
+
+\renewcommand{\thefigure}{\arabic{section}-\arabic{figure}}
+\renewcommand{\thetable}{\arabic{section}-\arabic{table}}
+\renewcommand{\theequation}{\arabic{section}-\arabic{equation}}
+
+\makeatletter
+\@addtoreset{table}{section}
+\@addtoreset{figure}{section}
+\@addtoreset{equation}{section}
+\@addtoreset{lstlisting}{section}
+\makeatother
+
+\renewcommand{\lstlistingname}{リスト}
+\AtBeginDocument{
+  \renewcommand{\thelstlisting}{\arabic{section}-\arabic{lstlisting}}
+}
+
+
+\lstset{
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+  commentstyle=\color{green},
+  stringstyle=\color{red},
+  showstringspaces=false,
+  language=verilog,
+}
