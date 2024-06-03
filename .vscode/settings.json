@@ -2,9 +2,9 @@
   "latex-workshop.latex.tools": [
     {
       "name": "LuaLaTeX",
-      "command": "lualatex",
+      "command": "latexmk",
       "args": [
-        "-f", "-gg", "-synctex=-1", "-interaction=nonstopmode", "-file-line-error", "-outdir=%OUTDIR%", "%DOC%"
+        "-f", "-gg", "-lualatex", "-synctex=-1", "-interaction=nonstopmode", "-file-line-error", "-outdir=%OUTDIR%", "%DOC%"
       ]
     }
   ],
